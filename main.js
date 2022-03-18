@@ -1,5 +1,5 @@
-function resonsiveMenu() {
-    var x = document.getElementsById("navbar")
+function mobileMenu() {
+    var x = document.getElementById("navbar")
     if (x.className === "nav") {
         x.className += " mobile";
     } else {
