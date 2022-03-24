@@ -321,6 +321,22 @@ small{
 /*------- Third-Offer -------*/
 
 .third-offer{
+    background: radial-gradient(rgb(255, 255, 255), #a2b9c7);
+    margin-top: 120px;
+    padding: 30px 0;
+    
+    }
+    
+    .col-2 .offer-img {
+    padding: 60px;
+    
+    }
+    
+    small{
+        color:rgb(70, 70, 70) ;
+    }
+
+.fourth-offer{    
     background: radial-gradient(rgb(255, 255, 255), #c7b4a2);
     margin-top: 120px;
     padding: 30px 0;
@@ -339,8 +355,7 @@ small{
 
 
 
-
-/*------Footer------*/
+    /*------Footer------*/
 
 footer{
     position: flex;
