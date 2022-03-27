@@ -25,7 +25,6 @@
                 <header>
                 <nav id="navbar" class="nav">
                     <ul id="menuList">
-                        <li><a class="hamburger-menu" onclick="mobileMenu()" src="main.js" href="main.js" ><i class="fa fa-bars"></i></a></li>
                         <li><a href="#mancare">Mâncare</a></li>
                         <li><a href="#paturi">Paturi</a></li>
                         <li><a href="#jucarii">Jucării</a></li>
@@ -35,6 +34,8 @@
                     </ul>
                     
                 </nav>   
+                <a id="hamburger-menu" class="hamburger-menu" onclick="mobileMenu()" 
+                    ><i class="fa fa-bars"></i></a>
             </header>
 
                 <img src="./assets/images/nav/align.png" class="menu-icon" width="25px" height="25px" onclick="togglemenu()">
@@ -62,8 +63,7 @@
         <div class="categories">
             <div class="small-container">
                         <div class="iframe-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/gGTyImUJRpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
-                        </div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dtGtB-LcIP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        </div>
                 </div>
             </div>
     </section>
@@ -268,10 +268,10 @@
             <img src="./assets/images/offerts/dogsandcats.png" alt="Pets">
             </div>
             <div class="col-2">
-            <p>Vizitează LiaZoo!</p>
+            <p>Vizitează LiaZoo pe Facebook!</p>
             <h1>LiaZoo Shop</h1>
             <small><b>LiaZoo</b>. Procură producția de la noi din magazin, si devină unul din clienții noștri permanenți!</small>
-            <a href="https://www.google.com/maps/place/Zoo+Magazin+Lia/@46.9511156,28.7704737,17z/data=!4m13!1m7!3m6!1s0x40c97f68ab991619:0xdf62af76760cc954!2sStr.+Prieteniei,+Ialoveni,+Moldova!3b1!8m2!3d46.951112!4d28.7726624!3m4!1s0x40c97fcb35884a91:0x88530d870ff2877b!8m2!3d46.9509379!4d28.7725268" class="btn">Detalii </a>
+            <a href="https://www.facebook.com/ZooMagazinLia" class="btn">Detalii </a>
                 </div>
             </div>
         </div>
@@ -328,7 +328,7 @@
             </div>
             <div class="col-2">
             <p>Acest Website a fost realizat în cadrul competiției ,,Tekwill Junior Ambassadors" organizată de proiectul ,,Tekwill in Fiecare Scoala" și nu reflectă neapărat opinia proiectului.</p>
-            <h1>Project "Horizon"</h1>
+            <h1>Echipa "Horizon"</h1>
         
                 </div>
             </div>
@@ -342,13 +342,12 @@
             <div class="main-content">
                 <div class="leftbox">
                     <h2>Despre Noi</h2>
+                    <div class="textdesprenoi"><p>Bună, noi suntem LiaZoo Magazin, magazin cu o ofertă variată de hrană și accesorii pentru animale de companie, în orașul Ialoveni, Republica Moldova.</p></div>
+                    <div class="descriere">
+                        <img class="imaginedefata" src="./assets/images/FrontImages/Magazinface.jpg" alt="Fața Magazinului">
+                        <img class="imaginedefata1"  src="./assets/images/FrontImages/zoomagazin.jpg" alt="LiaZoo">
+                    </div>
                     <div class="content">
-                        <div class="social">  
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2723.5381530888935!2d28.7704737!3d46.9511156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97fcb35884a91%3A0x88530d870ff2877b!2sZoo%20Magazin%20Lia!5e0!3m2!1sro!2sro!4v1647613650432!5m2!1sro!2sro" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen aria-hidden="false" tabindex="0"></iframe>     
-                            <a href="https://www.facebook.com/ZooMagazinLia"><span class="fa-brands fa-facebook-f"></span></a>
-                            <a href="#"><span class="fa-brands fa-instagram"></span></a>
-                        </div>
-                        <hr>
                         <small class="Copyright">Copyright &copy; 2022 - LiaShop MD</small>
                     </div>
                 </div>
@@ -369,8 +368,7 @@
                             <span class="fas fa-info-circle"></span>
                             <span class="text">Magazinul LiaZoo Shop nu deține în totalitate produsele pe care le reprezintă site-ul.</span>
                         </div>
-                    
-                    
+                        <iframe class="harta" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2723.5381530888935!2d28.7704737!3d46.9511156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97fcb35884a91%3A0x88530d870ff2877b!2sZoo%20Magazin%20Lia!5e0!3m2!1sro!2sro!4v1647613650432!5m2!1sro!2sro" width="90%" height="230" frameborder="0" style="border:0;" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
                 
@@ -382,17 +380,17 @@
 
 
 <script>
-    var menuList = document.getElementById("menuList");
-    menuList.style.maxHeight = "0px";
-    function togglemenu(){
-        if(menuList.style.maxHeight == "0px")
-        {
-            menuList.style.maxHeight = "130px";
-        } 
-        else{
-            menuList.style.maxHeight = "0px";
-        }
-    }
+    // var menuList = document.getElementById("menuList");
+    // menuList.style.maxHeight = "0px";
+    // function togglemenu(){
+    //     if(menuList.style.maxHeight == "0px")
+    //     {
+    //         menuList.style.maxHeight = "130px";
+    //     } 
+    //     else{
+    //         menuList.style.maxHeight = "0px";
+    //     }
+    // }
 
 </script>
 
